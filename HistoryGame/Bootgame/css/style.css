@@ -1,0 +1,22 @@
+nav {
+    background-color: gray;
+}
+
+nav ul,a {
+    color: gray;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav a:active {
+    color: white;
+}
+
+header {
+    background-color: rgba(243, 237, 237, 0.4) !important;
+}   
+
+body {
+    background-color: aqua;
+    
+}
