@@ -14,33 +14,38 @@
 
 </head>
 <body>
-    
-    <nav class=" navbar-expand-sm fixed-top">
-        <div class=" navbar col-6 bg-dark">
-            <div class="collapse navbar-collapse col-lg" id="navbarNav">
-                <a class="nav-link active" aria-current="page" href="#"><img src="/ACDCRessources/img/logo-ac-dc.png" alt="Logo" width="150" height="100"></a>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Membres</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Discographie</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Agenda des concerts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Contact</a>
-                    </li>
-                </ul>
+
+    <nav class="navbar navbar col-sm-7 fixed-top navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+               <a class="nav-link active" aria-current="page" href="#"><img src="/ACDCRessources/img/logo-ac-dc.png" alt="Logo" width="100" height="75"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="#header"><h3>Accueil</h3></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="#membres"><h3>Membres</h3></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="#discographie"><h3>Discographie</h3></a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="#agenda"><h3>Agenda des concerts</h3></a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="#contact"><h3>Contact</h3></a>
+                </li>
+            </ul>
             </div>
         </div>
     </nav>
 
-    <header class="container">
+    <header id="header" class="container">
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -64,10 +69,10 @@
         </button>
     </header>
 
-    <section>
+    <section id="membres">
         <div class="row">
             <img src="/ACDCRessources/img/logo-ac-dc.png" alt="Logo" width="150" height="100" class="col-sm-2">
-            <h3 class="col-sm-2 text-white">Les membres du groupe</h3>
+            <h3 class="col-sm-3 text-white">Les membres du groupe</h3>
         </div>
 
         <div class="row text-center">
@@ -94,7 +99,12 @@
         </div>
     </section>
 
-    <section class="container">
+    <section class="container" id="discographie">
+        <div class="row">
+            <img src="/ACDCRessources/img/logo-ac-dc.png" alt="Logo" width="150" height="100" class="col-sm-2">
+            <h3 class="col-sm-3 text-white">La discographie</h3>
+        </div>
+
         <div class="row justify-content-around gap-5">
             <div class="card col-4" style="width: 18rem;">
                 <img src="img/Discographie/High-voltage-1975.jpg" class="card-img-top" alt="...">
@@ -187,7 +197,7 @@
         </div>
     </section>
 
-    <section class="container">
+    <section class="container" id="agenda">
         <table class="table table-dark ">
             <thead>
                 <tr >
@@ -226,18 +236,18 @@
         </table>
     </section>
 
-    <section class="container">
+    <section class="container" id="contact">
         <div class="row">
             <img src="/ACDCRessources/img/logo-ac-dc.png" alt="Logo" width="150" height="100" class="col-sm-2">
             <h3 class="col-sm-2 text-white">Contact</h3>
         </div>
 
         <form action="/action_page.php">
-            <div class="row">
-                <div class="col-sm-6">
+            <div class="row width">
+                <div class="col-6">
                     <input type="text" class="form-control" placeholder="Nom" name="Nom">
                 </div>
-                <div class="col-sm-6">
+                <div class="col-6">
                     <input type="text" class="form-control" placeholder="Prénom" name="prenom">
                 </div>
             </div>
@@ -248,10 +258,10 @@
                     <input type="text" class="form-control" rows="5" placeholder="Votre message" name="message">
             </div>
             <div class="row">
-                <div class="col-sm-2">
+                <div class="col-4">
                     <button type="submit" class="btn btn-danger">Envoyer</button>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-4">
                     <button type="submit" class="btn btn-danger">Annuler</button>
                 </div>
             </div>

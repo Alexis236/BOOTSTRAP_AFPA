@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Hard Rock';
+    src: url(/ACDCRessources/fonts/HARD_ROCK.ttf);
+}
+@font-face {
+    font-family: 'rocknroll';
+    src: url(/ACDCRessources/fonts/rocknroll_typo_crazy.ttf);
+}
+@font-face {
+    font-family: 'the dark';
+    src: url(/ACDCRessources/fonts/TheDark.ttf);
+}
+
+
 body {
     background-image: url(/ACDCRessources/img/fond_acdc.png) ;
     width: 100%;
@@ -6,6 +20,15 @@ body {
 header {
     margin-top: 12%;
 }
+
+nav a {
+    font-family: 'Hard Rock';
+}
+
+h3, input {
+    font-family: 'Hard Rock';
+}
+
 
 section {
     margin: 10% 0% 10% 0%;
